@@ -36,7 +36,7 @@ function addVerticalSlider() {
 
 function addHorizontalSlider() {
     horizontalSlider = createSlider(2, initialMirrorLength, 50);
-    horizontalSlider.position(windowWidth/2 - 500, windowHeight/2 + 300);
+    horizontalSlider.position(windowWidth/2 - 500, windowHeight/2 + horizontalSliderVerticalOffset);
     horizontalSlider.style('width', '400px');
 }
 
@@ -69,6 +69,6 @@ function getFirstToBottom(mirrorPosition, mirror, ray, objPosistion) {
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     verticalSlider.position(windowWidth/2 + rightMirrorPosition.x + verticalSliderHorizontalOffset, windowHeight/2 - 12);
-    horizontalSlider.position(windowWidth/2 - 500, windowHeight/2 + 300);
+    horizontalSlider.position(windowWidth/2 - 500, windowHeight/2 + horizontalSliderVerticalOffset);
 
 }

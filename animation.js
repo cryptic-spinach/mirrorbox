@@ -101,10 +101,9 @@ function draw() {
     drawArrow(endOfRayPosition, reflectedRayVector, rayColor, 3);
   }
 
-  showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', -800, -objectPosition.y + 500, '#c7c7c7', 500);
-  //showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), -800, -objectPosition.y + 450, '#c7c7c7', 500);
-  showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), 250, -objectPosition.y + 525, '#c7c7c7', 500);
-  showValue(messageText, -800, -objectPosition.y, '#c7c7c7', 500);
+  showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', -800, -objectPosition.y - 60, '#c7c7c7', 500);
+  showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), 250, -objectPosition.y - 60, '#c7c7c7', 500);
+  showValue(messageText, -800, -objectPosition.y + 150, '#c7c7c7', 500);
   drawPngImages();
 }
 
