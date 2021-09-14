@@ -35,9 +35,10 @@ function addVerticalSlider() {
 }
 
 function addHorizontalSlider() {
+    let sliderWidthString = (initialMirrorSpacing).toString() + "px";
     horizontalSlider = createSlider(2, initialMirrorLength, 50);
     horizontalSlider.position(windowWidth/2 + horizontalSliderHorizontalOffset, windowHeight/2 + horizontalSliderVerticalOffset);
-    horizontalSlider.style('width', '400px');
+    horizontalSlider.style('width', sliderWidthString);
 }
 
 

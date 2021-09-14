@@ -30,21 +30,23 @@ let normalColor = '#ffffff'
 let rayColor = '#ffaf40';
 let mirrorColor = '#40efff'
 
-let verticalSliderHorizontalOffset = -150;
+let verticalSliderHorizontalOffset = -200;
 let verticalSliderVerticalOffset = -12; 
 
-let horizontalSliderHorizontalOffset = -800;
-let horizontalSliderVerticalOffset = 250;
+let horizontalSliderHorizontalOffset = -150;
+let horizontalSliderVerticalOffset = -330;
 
 let messageTextHorizontalOffset = -800; 
 let messageTextVerticalOffset = 0;
 
-let angleTextHorizontalOffset = -800;
-let angleTextVerticalOffset = 450;
+let angleTextHorizontalOffset = -150;
+let angleTextVerticalOffset = -120;
 
 let successTextHorizontalOffset = -65;
 let successTextVerticalOffset = 110;
 
+let mirrorTextHorizontalOffset = 200;
+let mirrorTextVerticalOffset = -40;
 
 let additionalRayTrail = 5;
 let isSuccess = false;

@@ -104,7 +104,7 @@ function draw() {
   }
 
   showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', angleTextHorizontalOffset, eyePosition.y + angleTextVerticalOffset, '#c7c7c7', 500);
-  showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), 250, -objectPosition.y - 60, '#c7c7c7', 500);
+  showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), mirrorTextHorizontalOffset, -objectPosition.y + mirrorTextVerticalOffset, '#c7c7c7', 500);
   showValue(messageText, messageTextHorizontalOffset, eyePosition.y + messageTextVerticalOffset, '#c7c7c7', 500);
   drawPngImages();
 }
