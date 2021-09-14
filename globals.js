@@ -42,8 +42,8 @@ let messageTextVerticalOffset = 0;
 let angleTextHorizontalOffset = -150;
 let angleTextVerticalOffset = -120;
 
-let successTextHorizontalOffset = -65;
-let successTextVerticalOffset = 120;
+let successTextHorizontalOffset = -350;
+let successTextVerticalOffset = -15;
 
 let mirrorTextHorizontalOffset = 200;
 let mirrorTextVerticalOffset = -40;

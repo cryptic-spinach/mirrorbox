@@ -31,7 +31,7 @@ function draw() {
 
   if ( isSuccess ) {
     rayColor = '#2eff66';
-    showValue('Path found!', successTextHorizontalOffset, -eyePosition.y + successTextVerticalOffset, '#2eff66', 500);
+    showValue('Path found!', successTextHorizontalOffset, successTextVerticalOffset, '#2eff66', 500);
   }  
 
   // Draw Mirror Vector at Mirror Position
