@@ -15,13 +15,15 @@ function setup() {
   mirrorVector = createVector(0, -initialMirrorLength);
   eyePosition = createVector(0, -initialMirrorLength/2);
   zeroVector = createVector(0, 0);
+  translate(windowWidth/2, windowHeight/2);
+  scale(1, -1);
   addVerticalSlider();
   addHorizontalSlider();
 }
   
 function draw() {
   background(bgColor);
-  translate(windowWidth/2 + 300, windowHeight/2);
+  translate(windowWidth/2, windowHeight/2);
   scale(1, -1);
   angleMode(DEGREES);
 
@@ -29,7 +31,7 @@ function draw() {
 
   if ( isSuccess ) {
     rayColor = '#2eff66';
-    showValue('Path found!', -60, -objectPosition.y - 100, '#2eff66', 500);
+    showValue('Path found!', successTextHorizontalOffset, -eyePosition.y + successTextVerticalOffset, '#2eff66', 500);
   }  
 
   // Draw Mirror Vector at Mirror Position
@@ -101,9 +103,9 @@ function draw() {
     drawArrow(endOfRayPosition, reflectedRayVector, rayColor, 3);
   }
 
-  showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', -800, -objectPosition.y - 60, '#c7c7c7', 500);
+  showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', angleTextHorizontalOffset, eyePosition.y + angleTextVerticalOffset, '#c7c7c7', 500);
   showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), 250, -objectPosition.y - 60, '#c7c7c7', 500);
-  showValue(messageText, -800, -objectPosition.y + 150, '#c7c7c7', 500);
+  showValue(messageText, messageTextHorizontalOffset, eyePosition.y + messageTextVerticalOffset, '#c7c7c7', 500);
   drawPngImages();
 }
 

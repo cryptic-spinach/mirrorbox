@@ -1,9 +1,6 @@
 let verticalSlider;
 let horizontalSlider;
 
-let mirrorSpeed = 1;
-let objectSpeed = 1;
-
 let zeroVector;
 let normalVector;
 let heightVector;
@@ -33,9 +30,21 @@ let normalColor = '#ffffff'
 let rayColor = '#ffaf40';
 let mirrorColor = '#40efff'
 
-let verticalSliderHorizontalOffset = 150;
-let horizontalSliderVerticalOffset = -250;
-let maxMirrorWidth = 250;
+let verticalSliderHorizontalOffset = -150;
+let verticalSliderVerticalOffset = -12; 
+
+let horizontalSliderHorizontalOffset = -800;
+let horizontalSliderVerticalOffset = 250;
+
+let messageTextHorizontalOffset = -800; 
+let messageTextVerticalOffset = 0;
+
+let angleTextHorizontalOffset = -800;
+let angleTextVerticalOffset = 450;
+
+let successTextHorizontalOffset = -65;
+let successTextVerticalOffset = 110;
+
 
 let additionalRayTrail = 5;
 let isSuccess = false;
