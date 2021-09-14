@@ -9,7 +9,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   objectPosition = createVector(0, initialMirrorLength/2);
-  rayVector = createVector(initialMirrorSpacing/2, -75);
+  rayVector = createVector(-initialMirrorSpacing/2, -75);
   leftMirrorPosition = createVector(-initialMirrorSpacing/2, initialMirrorLength/2);
   rightMirrorPosition = createVector(initialMirrorSpacing/2, initialMirrorLength/2);
   mirrorVector = createVector(0, -initialMirrorLength);
@@ -37,6 +37,7 @@ function draw() {
   // Draw Mirror Vector at Mirror Position
   mirrorVector.y = verticalSlider.value();
   rayVector.y = -horizontalSlider.value();
+  
   drawArrow(leftMirrorPosition, mirrorVector, mirrorColor, 3);
   drawArrow(rightMirrorPosition, mirrorVector, mirrorColor, 3);
   
@@ -103,9 +104,9 @@ function draw() {
     drawArrow(endOfRayPosition, reflectedRayVector, rayColor, 3);
   }
 
-  showValue('Angle of Incidence: ' + (180-theta).toFixed() + '°', angleTextHorizontalOffset, eyePosition.y + angleTextVerticalOffset, '#c7c7c7', 500);
+  showValue('Angle of Incidence: ' + (theta).toFixed() + '°', angleTextHorizontalOffset, eyePosition.y + angleTextVerticalOffset, '#c7c7c7', 500);
   showValue('Mirror Length: ' + -mirrorVector.y.toFixed(2), mirrorTextHorizontalOffset, -objectPosition.y + mirrorTextVerticalOffset, '#c7c7c7', 500);
-  showValue(messageText, messageTextHorizontalOffset, eyePosition.y + messageTextVerticalOffset, '#c7c7c7', 500);
+  //showValue(messageText, messageTextHorizontalOffset, eyePosition.y + messageTextVerticalOffset, '#c7c7c7', 500);
   drawPngImages();
 }
 

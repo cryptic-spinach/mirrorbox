@@ -43,7 +43,7 @@ let angleTextHorizontalOffset = -150;
 let angleTextVerticalOffset = -120;
 
 let successTextHorizontalOffset = -65;
-let successTextVerticalOffset = 110;
+let successTextVerticalOffset = 120;
 
 let mirrorTextHorizontalOffset = 200;
 let mirrorTextVerticalOffset = -40;

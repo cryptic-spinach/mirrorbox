@@ -29,8 +29,8 @@ function drawPngImages() {
 function addVerticalSlider() {
     let sliderWidthString = (initialMirrorLength).toString() + "px";
     verticalSlider = createSlider(-initialMirrorLength, 0, mirrorVector.y);
-    verticalSlider.position(windowWidth/2 + rightMirrorPosition.x + verticalSliderHorizontalOffset, windowHeight/2 + verticalSliderVerticalOffset);
     verticalSlider.style("transform", "rotate(-90deg)");
+    verticalSlider.position(windowWidth/2 + rightMirrorPosition.x + verticalSliderHorizontalOffset, windowHeight/2 + verticalSliderVerticalOffset);
     verticalSlider.style('width', sliderWidthString);
 }
 
@@ -69,6 +69,6 @@ function getFirstToBottom(mirrorPosition, mirror, ray, objPosistion) {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    verticalSlider.position(windowWidth/2 + verticalSliderHorizontalOffset, windowHeight/2 + verticalSliderVerticalOffset);
+    verticalSlider.position(windowWidth/2 + rightMirrorPosition.x + verticalSliderHorizontalOffset, windowHeight/2 + verticalSliderVerticalOffset);
     horizontalSlider.position(windowWidth/2 + horizontalSliderHorizontalOffset, windowHeight/2 + horizontalSliderVerticalOffset);
 }
